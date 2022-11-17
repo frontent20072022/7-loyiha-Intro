@@ -49,7 +49,7 @@ html{
   box-sizing:inherit;
 }
 *:focus{
-  outline: 2px dashed #655AF2;
+  outline: 2px dotted #655AF2;
   outline-offset: 3px;
 }
 
@@ -65,7 +65,6 @@ body{
   background-color: #fff;
   color: #222;
 }
-
 img{
   max-width: 100%;
   height: auto;
@@ -101,23 +100,20 @@ img{
 }
 .block-left-intro {
   width: 100%;
-  background-image: url(../img/intro-left-bg.jpg);
+  background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius:20px 20px 0 0;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   padding: 55px 60px;
   color:#fff;
   flex-grow: 1;
 }
-.intro-top {
-}
-.intro-btn {
+.intro-top{
   margin: 0;
   margin-bottom: 60px;
-  /* display:inline; */
+  max-width: 185px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -163,69 +159,72 @@ img{
 .intro-link:active{
   opacity: 0.6;
 }
-.block-right {
+/* SIGNUP-FORM */
+.signup-form {
   max-width: 570px;
   width: 100%;
   text-align: center;
-  /* height: 700px; */
   background-color:#fff;
-  padding: 55px 60px;
+  padding: 55px 60px 40px;
   border-radius: 20px;
+  overflow: hidden;
 }
-.block-right-heading {
+.signup-form-heading {
   margin: 0;
   text-align: left;
   font-size: 32px;
   font-weight: 600;
   line-height: 42px;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 }
-.input {
+.signup-form-fields{
+  display: flex;
+  flex-direction: column;
 }
-.input-intro {
-  display: block;
-  width: 100%;
+
+.signup-form-field {
   border: none;
   font-size: 16px;
+  padding-top: 15px;
   padding-bottom: 14px;
   line-height: normal;
   background: transparent;
   color:#555;
   border-bottom: 1px solid #555;
 }
-.input-intro:not(:last-child){
-  margin-bottom: 35px;
+.signup-form-field:focus{
+  color:#000;
+  border-color: #000;
+  font-size: 18px;
+  font-weight: 600;
 }
-.input-intro:last-child{
-  margin-bottom: 63px;
+.signup-form-field:not(:last-child){
+  margin-bottom: 20px;
+}
+.signup-form-field:last-child{
+  margin-bottom: 65px;
 }
 .block-right-button {
   display: block;
+  width: 100%;
   background-color: #655AF2;
   border-radius: 10px;
-  padding: 20px 149px;
+  padding: 20px;
   color:#fff;
   border:none;
   font-size: 16px;
-
-
-
-
   line-height: normal;
   font-weight: 600;
-
-}
-.block-right-text-buttom {
-  text-align: center;
+  cursor: pointer;
 }
 .text-buttom {
   font-size: 11px;
   line-height: 15px;
   margin: 0;
   margin-top: 8px;
+  text-align: center;
 }
 .buttom-link {
   color:#F03535;
-  font-size: 11px;
-  line-height: 15px;
+  font-weight: 500;
 }
