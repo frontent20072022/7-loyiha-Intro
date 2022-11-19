@@ -205,18 +205,22 @@ img{
 .signup-form-field:last-child{
   margin-bottom: 65px;
 }
-.block-right-button {
+.signup-form-button {
   display: block;
   width: 100%;
   background-color: #655AF2;
   border-radius: 10px;
   padding: 20px;
   color:#fff;
-  border:none;
+  border: transparent;
   font-size: 16px;
   line-height: normal;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease,
+}
+.signup-form-button:hover{
+  background-color:#4DC490;
 }
 .text-buttom {
   font-size: 11px;
@@ -228,4 +232,34 @@ img{
 .buttom-link {
   color:#F03535;
   font-weight: 500;
+}
+.buttom-link:hover {
+  color: #4DC490;
+}
+
+/* .error-message {
+  visibility: hidden;
+}
+
+.has-error .error-message {
+  visibility: visible;
+  color:rgba(240, 53, 53, 1);
+}
+
+.has-error input {
+  border-color: rgba(240, 53, 53, 1);
+}
+
+.has-error input::placeholder {
+  color: rgba(240, 53, 53, 1);
+} */
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-form input {
+  width: 100%;
 }
